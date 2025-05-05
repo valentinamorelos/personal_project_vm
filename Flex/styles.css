@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 10px;
+    background: #f1f1f1; 
+    height: 100%;
+    font-size: 1.125rem;
+    font-family: "Poppins", Times, serif;
+    color: #333;
+    margin: 0;
+  }
+
+  .header {
+    padding: 30px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    height: 92vh;
+    color: white;
+  }
+
+  .header h1 {
+    font-size: 4rem; /*70px or 3.889rem*/
+    letter-spacing: .02em;
+    font-weight: 500; /*or 300?*/
+    line-height: 1;
+    width: 100%;
+   text-transform: uppercase; /*does it look better upper or lowercase?*/
+  }
+
+  .header p{
+    font-size: 1.3rem;
+    letter-spacing: .01em;
+    
+  }
+
+
+  .topnav{
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+    text-transform: uppercase; /* check if i like it*/
+  }
+
+  .topnav a{
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav__right{
+    background-color: #c91c1c98;
+    margin-left: auto;
+
+  }
+
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .main p{
+    text-align: left;
+  }
+
+  .side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    /*border-left: 2px solid #000;*/
+  }
+
+  .side p, .side h3{
+    text-align: left;
+  }
+
+  .card {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  .card__title{
+    color: #c91c1c;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    font-weight: 550;
+    padding-bottom: 15px; 
+  }
+
+  .card__cv__title{
+    color: #c91c1c;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    font-weight: 550;
+    padding-bottom: 10px;
+  }
+
+  .card__subtitle{
+    font-weight: 400;
+  }
+  .card__subtitle2{
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  .firstp{
+    padding-top: 25px;
+  }
+  .firstp__about{
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .card__cv__subtitle{
+    font-weight: 500;
+    padding-top: 8px;
+  }
+
+  #contact{
+    background-color: #333;
+    border-radius: 8px;
+    /*margin-top: 5em; after making background white*/
+    
+  }
+
+  input[type=text],[type=email], select, textarea {
+  
+    background-color: #333;
+    color: white;
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #c91c1c98; 
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+
+button[type=submit] {
+    background-color:#c91c1c; /*or revert*/
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;/* not sure about keeping this*/
+    margin-bottom: 5px;
+  }
+  
+ 
+  button[type=submit]:hover {
+    background-color: #ddd;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .responsive_img_left{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 0.75em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+   .responsive_img_right{
+      width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 0.75em;
+    margin-top: -10px;
+   }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    color: #ddd;
+    margin-top: 20px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.jpg") ;
+    background-position: center;
+} 
+
+@media screen and (max-width: 700px) {
+    .row, .topnav {   
+      flex-direction: column;
+    }
+
+    .topnav__right{
+        margin: 0;
+    }
+
+    .header{
+        max-width: 100%;
+    }
+  }
+
+  @media (max-width: 416px) {
+
+    
+  }
