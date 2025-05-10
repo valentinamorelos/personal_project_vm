@@ -10,26 +10,29 @@ html{
   overflow-x: hidden;
 }
 body{
-  font-family: "Poppins", Times, serif;
+  font-family: "Poppins", Helvetica, sans-serif;
   margin: 0;
 }
 
 .navbar{
   display: flex;
   text-transform: uppercase;
+  gap: 10px;
+  align-items: center;
+
 }
 
 .navbar a {
+  flex: 1;
   color: black ;
-  padding: 14px 20px;
+  padding: 14px 25px;
   text-decoration: none;
   text-align: center;
-  margin: auto;
 }
 
 .navbar a:hover {
   background-color: #2a7b9b96;
-  color: black;
+  color: white;
   
   
 }
@@ -41,11 +44,35 @@ body{
   font-size: 30px;
 }
 
+.header p{
+ /*width: 60%;
+ margin: auto;*/
+  
+}
+
+.ml16 {
+  font-size: 1em;
+  overflow: hidden;
+  word-break: normal;
+  overflow-wrap: normal;
+  white-space: normal;
+  hyphens: auto;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
 .header button{
-  padding: 6px 10px;
+  padding: 8px 12px;
   background-color: #fff;
   border-radius: 12px;
   border: 0px;
+  font-family: "Poppins", Times, serif;
+  cursor: pointer;
 }
 
 .header button:hover{
@@ -122,6 +149,10 @@ body{
   margin-right: 10px;
 }
 
+.model__img:hover{
+  transform: scale(1.5);
+}
+
 .stories__container{
   padding: 60px;
 }
@@ -152,6 +183,7 @@ body{
   padding: 20px;
   border-radius: 8px;
   margin: 10px;
+  flex: 1;
 }
 
 .stories__p{
@@ -178,7 +210,7 @@ body{
 }
 footer {
   padding: x;
-  text-align: center;
+  text-align: left;
   background: #2a7b9b96;
 }
 footer .content{
@@ -234,12 +266,53 @@ footer .content .link-boxes .box{
   font-weight: 300;
   color: #fff;
   opacity: 0.8;
+  text-align: center;
   text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {
-  .row, .navbar, footer {   
+  .row, .navbar, footer, .stories__content {   
     flex-direction: column;
   }
 
-}
+  .header h1{
+    font-size: 2rem;
+  }
+  .header p{
+   font-size: 1.2rem;
+  }
+
+  .stories__container{
+    padding: 0;
+  }
+
+  footer .content .link-boxes {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  footer .content .link-boxes .box {
+    width: 100%;       /* Optional: full width of container */
+    text-align: center; /* Optional: center text */
+    margin-bottom: 20px;
+  }
+
+  footer .content .link-boxes ul.box {
+    padding-right: 40px;
+    text-align: center; /* optional for visual centering */
+  }
+  .navbar{
+    align-items: stretch;;
+  }
+  .navbar a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+};
+
+@media screen and (max-width: 400px) {
+  .row, .navbar, footer {   
+    flex-direction: column;
+  }
+  
+};

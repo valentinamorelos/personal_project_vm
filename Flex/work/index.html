@@ -13,15 +13,15 @@
 <body>
     <div class="navbar">
         <a href="/Flex/index.html">Bottles Boutique</a>
-        <a href="/Flex/index.html">Shop Bottles</a>
-        <a href="/Flex/index.html">Reviews & Stories</a>
+        <a href="#sb">Shop Bottles</a>
+        <a href="#ns">Reviews & Stories</a>
         <a href="/Flex/index.html">About</a>
         <a href="/Flex/index.html">Cart</a>
         <a href="/Flex/index.html">Log in</a>        
     </div>
     <div class="header">
             <h1>Reusable bottles in beautiful designs.</h1>
-            <p>For water and more. Waterproof. Leak-proof. Keeps your drink ice-cold or super warm for 24 hours.</p>
+            <p class="ml16">For water and more. Waterproof. Leak-proof. Keeps your drink ice-cold or super warm for 24 hours.</p>
             <button type="button">Shop Now</button>
     </div>
     <div class="row">  
@@ -41,7 +41,7 @@
         </div>
         </div>
         <div class="middle">
-            <h2 class="titleMiddle">Shop bottles</h2>
+            <h2 class="titleMiddle" id="sb">Shop bottles</h2>
                 
                 <ul class="middle__content">
                     <li class="model__name">
@@ -57,17 +57,18 @@
                         <a href="" class="model"><img src="images/model4.jpg" alt="bottle model 4" class="model__img"> <br>Stylish</a>
                     </li>
                 </ul>
-            <div class="stories__container">
+            <div class="stories__container" id="ns">
                 <h2 class="titleMiddle">Stories</h2>
                 <div class="stories__content"> 
                     <div class="stories__button">  <a href="" class="stories__link">
                         <p class="stories__subtitle">Co-brand your bottle</p>
-                        <p  class="stories__p">Lorem ipsum dolor, sit amet consecteur adispicing elit, Tenetur, quibusdam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae sit voluptatum inventore. Eligendi adipisci sint hic soluta labore? Placeat quod illo aliquid, ipsa doloribus quos! Tenetur culpa quis nam commodi!</p></a>
+                        <p  class="stories__p">Sometimes, it's the small details that make something truly yours. With the option to add your initials, each bottle becomes more than just a daily essential — it becomes a reflection of you. Whether it sits on your desk, travels in your gym bag, or accompanies you on weekend hikes, a personalized bottle stands out quietly, reminding you (and everyone else) that sustainability can still be personal. Clean, simple, and made to last — just like your mark on the world!</p></a>
                         <a href="" class="stories__link readmore">Read more</a>
                     </div>
                     <div  class="stories__button"> <a href="" class="stories__link">
                         <p class="stories__subtitle">Top reviews</p>
-                        <p class="stories__p">Lorem ipsum dolor, sit amet consecteur adispicing elit,id optio mayime assumenda. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dicta blanditiis, nam deserunt quisquam ipsum eveniet quo iusto sapiente architecto exercitationem optio suscipit esse. Numquam voluptas tenetur nobis repudiandae autem?</p></a>
+                        <Marissa class="stories__p">"I used to buy a new plastic water bottle every time I left the house — I didn't even think about it. But after learning how much plastic ends up in the ocean, I decided to make a change. I found [EcoBottleBrand] and instantly loved the look of their bottles. They're sleek, lightweight, and keep my water cold for hours. It's become part of my daily routine — and a small but powerful reminder that making better choices really does matter. I've even inspired two coworkers to get their own!" <span>—Marissa L.</span></p> 
+                        </a>
                         <a href="" class="stories__link readmore">Read more</a>
                     </div>
                 </div>
@@ -104,6 +105,8 @@
             </div>  
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="script.js"> </script>
 </body>
 </html>
 
